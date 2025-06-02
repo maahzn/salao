@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contato | Barbearia Alura</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" href="assets/css/contato.css">
+        <link rel="stylesheet" href="assets/css/medias.css">
+        <link rel="stylesheet" href="assets/css/body.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <style>
+            /* Estilos Gerais */
+            body {
+                background-color: #F5F5F5; /* Fundo claro */
+                color: #333333; /* Texto escuro para boa leitura */
+                font-family: 'Poppins', sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background-color: #7F4D9E; /* Roxo escuro */
+                padding: 20px;
+                text-align: center;
+                border-bottom: 5px solid #D1A6D6; /* Lilás claro para a borda */
+            }
+
+            header h1 img {
+                max-width: 200px;
+                margin-bottom: 10px;
+            }
+
+            header nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            header nav ul li {
+                margin: 0 15px;
+            }
+
+            header nav ul li a {
+                color: #FFFFFF; /* Branco */
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+
+            header nav ul li a:hover {
+                color: #D1A6D6; /* Lilás suave ao passar o mouse */
+            }
+
+            /* Estilo do Formulário */
+            form {
+                padding: 40px;
+                background-color: #FFFFFF; /* Fundo branco */
+                border-radius: 10px;
+                max-width: 800px;
+                margin: 40px auto;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+                color: #333333;
+            }
+
+            form fieldset {
+                border: none;
+                margin-bottom: 20px;
+            }
+
+            form label {
+                display: block;
+                margin: 10px 0 5px;
+                font-weight: bold;
+                color: #7F4D9E; /* Roxo */
+            }
+
+            form input, form textarea, form select {
+                width: 100%;
+                padding: 12px;
+                border-radius: 5px;
+                border: 1px solid #D1A6D6; /* Borda lilás suave */
+                background-color: #F9F9F9; /* Fundo levemente cinza claro */
+                color: #333333;
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            form input[type="submit"] {
+                background-color: #7F4D9E; /* Roxo */
+                border: none;
+                color: #FFFFFF; /* Branco */
+                font-weight: bold;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                padding: 12px;
+                width: 100%;
+                border-radius: 5px;
+            }
+
+            form input[type="submit"]:hover {
+                background-color: #9B61B1; /* Roxo claro ao passar o mouse */
+            }
+
+            /* Estilos da Tabela */
+            table {
+                width: 100%;
+                margin-top: 40px;
+                border-collapse: collapse;
+            }
+
+            table th, table td {
+                padding: 15px;
+                text-align: left;
+                border: 1px solid #D1A6D6;
+            }
+
+            table th {
+                background-color: #7F4D9E; /* Roxo escuro */
+                color: #FFFFFF;
+            }
+
+            table td {
+                background-color: #F9F9F9;
+                color: #333333;
+            }
+
+            table tr:nth-child(even) {
+                background-color: #F1F1F1; /* Fundo cinza claro */
+            }
+
+            /* Estilos do Rodapé */
+            footer {
+                background-color: #7F4D9E; /* Roxo escuro */
+                color: #FFFFFF;
+                text-align: center;
+                padding: 20px;
+                margin-top: 40px;
+            }
+
+            footer img {
+                max-width: 150px;
+                margin-bottom: 10px;
+            }
+
+            footer .Copyright {
+                margin-top: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="#conteudoPrincipal">Pular para o conteúdo principal</a>
+            <div class="caixa">
+                <h1><img src="assets/img/logo.png" alt="Logo da barbearia Alura"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <fieldset>
+                    <label for="nome-sobrenome">Nome e Sobrenome</label>
+                    <input type="text" id="nome-sobrenome" class="input-padrao" required>
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="input-padrao" placeholder="(XX) XXXXX-XXXX" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="input-padrao" placeholder="seuemail@seudomínio.com" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="75" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                </fieldset>
+
+                <fieldset>    
+                    <legend>Como prefere nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+                    <label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label for="checkbox"><input type="checkbox" class="checkbox" checked id="checkbox"> Gostaria de receber nossas novidades por e-mail?</label>
+
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>08h às 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta-feira</td>
+                        <td>08h às 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta-feira</td>
+                        <td>08h às 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <img src="assets/img/logo-branco.png" alt="Logo da barbearia Alura">
+            <p class="Copyright">&copy;Copyright Barbearia Alura - 2021</p>
+        </footer>
+    </body>
+</html>

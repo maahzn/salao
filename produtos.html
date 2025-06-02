@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Serviços | Salão Beleza Perfeita</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" href="assets/css/produtos.css">
+        <link rel="stylesheet" href="assets/css/medias.css">
+        <link rel="stylesheet" href="assets/css/body.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-color: #F5F5F5;
+                color: #333333;
+                font-family: 'Poppins', sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background-color: #7F4D9E;
+                padding: 20px;
+                text-align: center;
+                border-bottom: 5px solid #D1A6D6;
+            }
+
+            header h1 img {
+                max-width: 200px;
+                margin-bottom: 10px;
+            }
+
+            header nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            header nav ul li {
+                margin: 0 15px;
+            }
+
+            header nav ul li a {
+                color: #FFFFFF;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+
+            header nav ul li a:hover {
+                color: #D1A6D6;
+            }
+
+            main {
+                padding: 40px;
+            }
+
+            .produtos {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+                justify-items: center;
+                padding-top: 40px;
+            }
+
+            .produtos li {
+                background-color: #FFFFFF;
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .produtos h1 {
+                font-size: 1.5rem;
+                color: #7F4D9E;
+                margin-bottom: 15px;
+            }
+
+            .produtos img {
+                width: 100%;
+                border-radius: 8px;
+                margin-bottom: 15px;
+            }
+
+            .produto-descricao {
+                font-size: 1rem;
+                color: #333333;
+                margin-bottom: 15px;
+            }
+
+            .produtos-preco {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: #7F4D9E;
+            }
+
+            footer {
+                background-color: #7F4D9E;
+                color: #FFFFFF;
+                text-align: center;
+                padding: 20px;
+                margin-top: 40px;
+            }
+
+            footer img {
+                max-width: 150px;
+                margin-bottom: 10px;
+            }
+
+            footer .Copyright {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="#conteudoPrincipal">Pular para o conteúdo principal</a>
+            <div class="caixa">
+                <img src="assets/img/logo.png" alt="Logo Salão Beleza Perfeita">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Serviços</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <ul class="produtos">
+                <li>
+                    <h1>Corte de Cabelo</h1>
+                    <img src="assets/img/cabelo.jpg" alt="Corte de Cabelo">
+                    <h2 class="produto-descricao">Transforme seu visual com um corte moderno e profissional.</h2>
+                    <h3 class="produtos-preco">R$ 50,00</h3>
+                </li>
+                <li>
+                    <h1>Maquiagem</h1>
+                    <img src="c:\Users\PROFESSORES\Pictures\pexels-maria-camila-castaño-7712475_1643194087.jpg" alt="Maquiagem Profissional">
+                    <h2 class="produto-descricao">Realce sua beleza com um make profissional para qualquer ocasião.</h2>
+                    <h3 class="produtos-preco">R$ 80,00</h3>
+                </li>
+                <li>
+                    <h1>Unhas</h1>
+                    <img src="c:\Users\PROFESSORES\Pictures\b5d5681898470ac9c83a94bfbddc23a9.jpg" alt="Unhas Decoradas">
+                    <h2 class="produto-descricao">Unhas decoradas e bem cuidadas para um toque final perfeito.</h2>
+                    <h3 class="produtos-preco">R$ 40,00</h3>
+                </li>
+            </ul>
+        </main>
+
+        <footer>
+            <img src="assets/img/logo-branco.png" alt="Logo Salão Beleza Perfeita">
+            <p class="Copyright">&copy;Copyright Salão Beleza Perfeita - 2021</p>
+        </footer>
+    </body>
+</html>
